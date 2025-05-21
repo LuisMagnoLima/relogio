@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Share Tech Mono", monospace;
+  background: black;
+  color: #00ff00;
+}
+
+.bgv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 93rem;
+  height: 115rem;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.relogiocont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff00;
+}
+
+.relogio {
+  font-size: 90px;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #008000;
+  font-weight: bold;
+}
+
+@keyframes brilho {
+  0% {
+    text-shadow: 0 0 10px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 20px #00ff00, 0 0 40px #008000;
+  }
+  100% {
+    text-shadow: 0 0 10px #00ff00;
+  }
+}
+
+.clock {
+  animation: brilho 1s infinite alternate;
+}
